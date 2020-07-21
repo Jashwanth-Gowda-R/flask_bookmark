@@ -26,7 +26,7 @@ def save():
         mongo.db.bookmark.insert(
             {'username': request.form.get('username')})
 
-        resp = jsonify('user added successfully')
+        resp = jsonify('bookmarked added successfully')
         resp.status_code = 200
         return resp
     else:
